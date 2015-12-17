@@ -1,0 +1,24 @@
+<navbar></navbar>
+
+<md-content class="md-padding" layout="row" layout-wrap layout-align="center start">
+    <div flex="50" layout="column" ng-repeat="product in products">
+      <md-card>
+        <!-- <img src="assets/images/bird.png" class="md-card-image" alt="Washed Out"> -->
+        <md-card-title>
+          <md-card-title-text>
+        	<a href="/{{product.state}}">
+            <span class="md-headline" >{{product.name}}</span>
+            </a>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <p> {{product.about}} </p>
+         
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button href="/{{product.state}}">Learn more</md-button>
+        </md-card-actions>
+      </md-card>
+  </div>
+
+<footer></footer>

@@ -1,0 +1,17 @@
+<navbar></navbar>
+
+<div class="container" >
+  <div class="row">
+    <h1>Team</h1>
+    <div class="col-lg-12" margin-top="20px">
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="member in teamMembers">
+        <li>
+           <img ng-src="{{member.pic}}" height="150" alt="I'm audakel">
+          <h2>{{member.name}}</h2>
+           <p>{{member.about}}</p>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+<footer></footer>
